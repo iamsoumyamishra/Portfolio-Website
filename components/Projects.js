@@ -13,19 +13,22 @@ const Projects = () => {
             id: 1,
             title: 'Portfolio Website',
             description: 'A personal portfolio website showcasing my skills and projects.',
-            image: '/projects/project1.png'
+            image: '/projects/project1.png',
+            url: 'https://github.com/iamsoumyamishra/Portfolio-Website'
         },
         {
             id: 2,
-            title: 'E-commerce Platform',
-            description: 'An online store with a user-friendly interface and secure payment options.',
-            image: '/projects/project2.png'
+            title: 'Text Utils',
+            description: 'A utility application for text manipulation and analysis.',
+            image: '/projects/project2.png',
+            url: 'https://github.com/iamsoumyamishra/Text-Utils'
         },
         {
             id: 3,
-            title: 'Blog Application',
-            description: 'A blogging platform where users can share their thoughts and ideas.',
-            image: '/projects/project3.png'
+            title: 'Spotify Music Downloader',
+            description: 'A tool to download music from Spotify.',
+            image: '/projects/project3.png',
+            url: 'https://github.com/iamsoumyamishra/Spotify-Music-Downloader'
         }
     ]);
 
@@ -46,11 +49,11 @@ const Projects = () => {
                         <div className='h-50'>
                             <Image src="/projects/project1.png" alt="Project 1" width={200} height={100} className='project-image mb-4' />
                         </div>
-                        <div className='p-6 z-1 bg-gray-800 rounded-b-xl'>
+                        <div className='p-6 z-1 bg-gray-800 rounded-b-xl h-full'>
 
                             <h2 className='text-2xl  font-semibold mb-3'>{project.title}</h2>
                             <p className='text-lg text-gray-200 mb-4'>{project.description}</p>
-                            <Link href={`${project.url}`}>
+                            <Link href={`${project.url}`} target='_blank'>
                                 <button className='cursor-pointer bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300'>
                                     View Project
                                 </button>
