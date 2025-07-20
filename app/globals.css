@@ -9,8 +9,38 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-barlow-condensed);
+  --font-mono: var(--font-barlow-condensed);
+  --font-barlow-condensed: var(--font-barlow-condensed);
+}
+
+@layer components{
+  .section-center{
+    @apply flex font-barlow-condensed flex-col text-center items-center justify-center h-auto min-h-screen w-auto bg-gray-100;
+  }
+  .section-justify-center{
+    @apply flex font-barlow-condensed text-center min-h-screen w-auto h-auto bg-gray-700;
+  }
+  .card{
+    @apply bg-white rounded-xl shadow-lg/200 shadow-white flex flex-col items-center p-8 m-8 md:mb-0 w-3/4 md:w-[16%] transition-all ease-in-out duration-300 hover:scale-105;
+    box-shadow: 0 0 5 5 rgb(16, 191, 255);
+  }
+  .card:hover{
+    box-shadow: 0 0 10 5 rgb(16, 191, 255);
+  }
+  .description{
+    @apply m-10 md:max-w-1/2 md:text-2xl;
+  }
+  .section-projects{
+    @apply flex font-barlow-condensed flex-col text-center min-h-screen w-auto h-auto bg-gray-100 px-0.5 md:px-20;
+  }
+  .project-card{
+    @apply bg-transparent border-2 rounded-xl w-3/4 md:w-80 text-white flex flex-col hover:shadow-2xl hover:border-[2px] hover:border-blue-500 transition-all ease-in-out duration-300;
+    box-shadow: 0 0 45 0.1 gray;
+  }
+  .project-image{
+    @apply w-full h-50 rounded-t-xl object-cover group-hover:h-60 transition-all ease-in-out duration-300;
+  }
 }
 
 /*

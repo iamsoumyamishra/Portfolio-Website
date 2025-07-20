@@ -13,10 +13,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// const barlowCondensed = Barlow_Condensed({
-//   variable: "--font-barlow-condensed",
-//   subsets: ["latin"],
-// });
+const barlowCondensed = Barlow_Condensed({
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-barlow-condensed",
+  subsets: ["latin"],
+});
 
 
 
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${barlowCondensed.variable} font-barlow-condensed antialiased`}
       >
         <Navbar />
         {children}
