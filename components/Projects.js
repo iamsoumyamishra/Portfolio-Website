@@ -27,7 +27,7 @@ const Projects = () => {
             id: 3,
             title: 'Spotify Music Downloader',
             description: 'A tool to download music from Spotify.',
-            image: '/projects/project3.png',
+            image: '/projects/project2.png',
             url: 'https://github.com/iamsoumyamishra/Spotify-Music-Downloader'
         }
     ]);
