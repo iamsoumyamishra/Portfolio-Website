@@ -27,7 +27,7 @@ const Projects = () => {
             id: 3,
             title: 'Spotify Music Downloader',
             description: 'A tool to download music from Spotify.',
-            image: '/projects/project2.png',
+            image: '/projects/project3.png',
             url: 'https://github.com/iamsoumyamishra/Spotify-Music-Downloader'
         }
     ]);
@@ -47,7 +47,7 @@ const Projects = () => {
                 {projects.map((project) => (
                     <div className='project-card group' key={project.id}>
                         <div className='h-50'>
-                            <Image src="/projects/project1.png" alt="Project 1" width={200} height={100} className='project-image mb-4' />
+                            <Image src={project.image} alt={`Project ${project.id}`} width={200} height={100} className='project-image mb-4' />
                         </div>
                         <div className='p-6 z-1 bg-gray-800 rounded-b-xl h-full'>
 
