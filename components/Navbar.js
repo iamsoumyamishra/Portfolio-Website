@@ -32,7 +32,6 @@ const Navbar = () => {
     { href: '#projects', label: 'Projects' },
     { href: '/skills', label: 'Skills' },
     { href: '/experience', label: 'Experience' },
-    { href: '/blog', label: 'Blog' },
   ];
 
   return (
@@ -128,14 +127,14 @@ const Navbar = () => {
             {/* Mobile CTA Button */}
             <div className="pt-4">
               <Link
-                href="/contact"
+                href="/Resume.pdf"
                 className={`block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center px-4 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg transform ${
                   isOpen ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'
                 }`}
                 style={{ transitionDelay: `${navItems.length * 50}ms` }}
                 onClick={() => setIsOpen(false)}
               >
-                Let's Talk
+                Resume
               </Link>
             </div>
           </div>

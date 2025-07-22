@@ -23,7 +23,7 @@ const About = () => {
                         <Image src="/linkedin.png" alt="LinkedIn" width={30} height={30} className='inline rounded-full' />
                     </Link>
                     <Link href="https://x.com/soumya.cpp" target="_blank">
-                        <Image src="/x-logo.png" alt="X" width={30} height={30} className='inline rounded-full' />
+                        <Image src="/x-logo.png" alt="X" width={30} height={30} className='inline rounded-full ' />
                     </Link>
                     <Link href="https://instagram.com/soumya.cpp" target="_blank">
                         <Image src="/Instagram_logo.svg" alt="Instagram" width={30} height={30} className='inline rounded-full' />
