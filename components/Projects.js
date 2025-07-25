@@ -42,7 +42,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='flex space-x-4 mt-20 gap-5 flex-wrap justify-center'>
+            <div className='flex mt-20 gap-5 flex-wrap justify-center'>
 
                 {projects.map((project) => (
                     <div className='project-card group' key={project.id}>

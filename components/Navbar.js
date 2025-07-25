@@ -16,7 +16,7 @@ const Navbar = () => {
   // Handle scroll effect for navbar background
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 1);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -29,8 +29,8 @@ const Navbar = () => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '#about', label: 'About' },
+    { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
-    { href: '/skills', label: 'Skills' },
     { href: '/experience', label: 'Experience' },
   ];
 
@@ -38,7 +38,7 @@ const Navbar = () => {
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-200/50' 
-        : 'bg-transparent'
+        : 'bg-gray-100 border-gray-200/50'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
